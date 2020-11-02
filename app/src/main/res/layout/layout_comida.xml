@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone_x_xs_11_pro__60_"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="40dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="18dp"
+
+        />
+    <Button
+        android:id="@+id/comidaDesayuno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Desayuno"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="160dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/Green"
+        android:background="@drawable/cuadrado_ok_comida"
+        android:onClick="onClick"
+    />
+    <Button
+        android:id="@+id/comidaAlmuerzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Almuerzo"
+        android:layout_marginTop="160dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/Grey"
+        android:background="@color/White"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/comidaCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Desayuno"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="160dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/Grey"
+        android:background="@color/White"
+        android:onClick="onClick"
+        />
+    <FrameLayout
+        android:id="@+id/frameHolderComida"
+        android:layout_width="500dp"
+        android:layout_height="510dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="220dp"
+    />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

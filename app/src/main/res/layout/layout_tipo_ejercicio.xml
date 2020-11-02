@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <ImageView
+        android:id="@+id/imagenTipoDeEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"
+         />
+    <Button
+        android:id="@+id/btnTipoDeEjercicio"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="235dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:textSize="15dp"
+        ></Button>
+
+    <TextView
+        android:id="@+id/NombreTipoDeEjercicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/Black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="115dp"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/textoIntoTipoEjer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/Grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="115dp"
+        android:textSize="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/iconoTipoDeEjercicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="65dp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

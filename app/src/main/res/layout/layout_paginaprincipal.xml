@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtNombreEnPagPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola Fede"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="40dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="18dp"
+
+    />
+    <TextView
+        android:id="@+id/txtmsj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No pierdas el ritmo y seguí entrenando!"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="18dp"
+        />
+    <ImageView
+        android:id="@+id/imageButtonComida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/perfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/grupo_1093"
+
+        />
+
+    <Button
+        android:id="@+id/btnPrinCom"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="528dp"
+        android:background="@drawable/login"
+        android:fontFamily="@font/sf_pro"
+        android:onClick="onclick"
+        android:text="Listo!"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="536dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Menu de hoy"
+        android:textColor="@color/Black"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="524dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Seiguiente"
+        android:textColor="@color/Grey"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="528dp"
+        android:src="@drawable/fontawsome__utensils_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageButton
+
+        android:id="@+id/imageButtonEjercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/perfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/rutinaprin"
+        />
+
+    <Button
+        android:id="@+id/btnPrinFit"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="348dp"
+        android:background="@drawable/login"
+        android:fontFamily="@font/sf_pro"
+        android:onClick="onClick"
+        android:text="Hoy!"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <TextView
+        android:id="@+id/txtPrinRut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="356dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Tienes una rutina para hoy"
+        android:textColor="@color/Black"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSecRut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="348dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Siguiente"
+        android:textColor="@color/Grey"
+        android:textSize="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconoEj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="348dp"
+        android:src="@drawable/icon_ionic_md_fitness"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grupo_musculo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="30dp"
+
+        />
+    <Button
+        android:id="@+id/imageViewMusculoPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="30dp"
+        android:onClick="onClick"
+        android:alpha="0"
+        />
+    <ImageView
+        android:id="@+id/imageViewAbdominalesPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grupo_abs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="590dp"
+        />
+    <ImageView
+        android:id="@+id/imageViewPiernasPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/grupo_piernas"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="590dp"
+        android:layout_marginRight="30dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

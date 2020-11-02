@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone_x_xs_11_pro__50"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/txtObj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="OBJETIVO"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+
+        android:layout_marginTop="205dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="22dp" />
+    <Button
+
+        android:id="@+id/btnFlechaObjetivo"
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="546dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"
+        android:alpha="0"
+        />
+
+
+    <ImageView
+        android:background="@color/White"
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="546dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icon_awesome_arrow_right"
+        />
+    <Button
+    android:id="@+id/btnFuerzaUnsellected"
+    android:layout_width="250dp"
+    android:layout_height="60dp"
+    android:background="@drawable/login"
+    android:text="Ganar Fuerza"
+    android:fontFamily="@font/sf_pro"
+    android:textAllCaps="false"
+    android:textSize="28dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="325dp"
+        android:onClick="onClick"
+    />
+    <Button
+        android:id="@+id/btnPerderPesoUnsellected"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login"
+        android:text="Perder Peso"
+        android:fontFamily="@font/sf_pro"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="425dp"
+        android:onClick="onClick"
+        />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnFuerzaSellected"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/register"
+        android:text="Ganar Fuerza"
+        android:fontFamily="@font/sf_pro"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="325dp"
+        android:onClick="onClick"
+        />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnPerderPesoSellected"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/register"
+        android:text="Perder Peso"
+        android:fontFamily="@font/sf_pro"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="425dp"
+        android:onClick="onClick"
+        />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnFuerzaNo"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/slected"
+        android:text="Ganar Fuerza"
+        android:fontFamily="@font/sf_pro"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="325dp"
+        android:onClick="onClick"
+        />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnPerderNo"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/slected"
+        android:text="Perder Peso"
+        android:fontFamily="@font/sf_pro"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="425dp"
+        android:onClick="onClick"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

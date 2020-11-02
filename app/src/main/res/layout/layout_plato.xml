@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo_un_plato">
+    <ImageView
+        android:id="@+id/FotoUnPlato"
+        android:layout_width="245dp"
+        android:layout_height="245dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp"
+
+        />
+    <TextView
+        android:id="@+id/NutrientesUnPlato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="445dp"
+        android:text=""
+        android:textColor="@color/Green"
+        android:fontFamily="@font/sf_pro"
+        android:textSize="30dp"
+
+        />
+    <TextView
+        android:id="@+id/NombreUnPlato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="33dp"
+        android:text=""
+        android:fontFamily="@font/mons_reg"
+        android:textColor="@color/Black"
+        android:textSize="24dp"
+        />
+
+    <TextView
+        android:id="@+id/DescUnPlato"
+        android:layout_width="356dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="520dp"
+        android:fontFamily="@font/mons_reg"
+        android:text=""
+        android:textColor="@color/Grey"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/GuardadoUnPlato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="640dp"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/DGrey"
+        android:textSize="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="640dp"
+        android:src="@drawable/guardado_comida_off"
+        />
+    <Button
+        android:id="@+id/SwitchGuardarOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="640dp"
+        android:onClick="onClick"
+        android:alpha="0"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

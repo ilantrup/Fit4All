@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:id="@+id/imagenLogro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+
+
+        />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombreLogro"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_pro"
+        app:layout_constraintLeft_toRightOf="@id/imagenLogro"
+        app:layout_constraintTop_toTopOf="@id/imagenLogro"
+        android:layout_marginLeft="15dp"
+        android:gravity="start"
+        android:layout_gravity="start" />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fechaLogro"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:layout_marginTop="63dp"
+        android:fontFamily="@font/sf_pro"
+        app:layout_constraintLeft_toRightOf="@id/imagenLogro"
+        app:layout_constraintTop_toTopOf="@id/imagenLogro"
+        android:layout_marginLeft="15dp"
+        android:gravity="start"
+        android:layout_gravity="start" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        app:srcCompat="@drawable/linea_21"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

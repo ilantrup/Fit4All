@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_ejercicios"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtNombEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrenamiento superior"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="30dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="18dp"
+        />
+    <TextView
+        android:id="@+id/txtNombRango"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rango X"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="26dp"
+        android:textColor="@color/Blue"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="18dp"
+        />
+
+    <TextView
+        android:id="@+id/txtCantEj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejercicios:10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="142dp"
+        android:layout_marginLeft="18dp"
+        />
+
+
+    <ListView
+        android:id="@+id/listaEjer"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnComRut"
+        android:text="Listo!"
+        android:fontFamily="@font/sf_pro"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/login"
+        android:layout_marginTop="675dp"
+        android:onClick="onClick"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

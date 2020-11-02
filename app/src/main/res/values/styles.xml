@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="MyProgressBarTwo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorControlNormal">@color/Lblue</item>
+        <item name="colorControlActivated">@color/Blue</item>
+
+        <item name="android:progressDrawable">@drawable/customprogressbar</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+
+</resources>

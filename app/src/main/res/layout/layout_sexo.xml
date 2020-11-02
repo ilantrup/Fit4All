@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@drawable/iphone_x_xs_11_pro__50"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <TextView
+        android:id="@+id/Sexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Selecione su sexo"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+
+        android:layout_marginTop="205dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="22dp" />
+
+    <Button
+
+        android:id="@+id/btnMujerUnsellect"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/Sexo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="120dp"
+        android:text="Mujer"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:background="@drawable/login"
+        android:textSize="28dp"
+        android:onClick="onclick"
+        ></Button>
+    <Button
+        android:id="@+id/btnHombreUnsellect"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/Sexo"
+        android:layout_marginTop="220dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Hombre"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:background="@drawable/login"
+        android:textSize="28dp"
+        android:onClick="onclick"
+        ></Button>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnMujerSelected"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/Sexo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="120dp"
+        android:text="Mujer"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:background="@drawable/register"
+        android:textSize="28dp"
+        android:onClick="onClick"
+        ></Button>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnHombreSellect"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/Sexo"
+        android:layout_marginTop="220dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Hombre"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:background="@drawable/register"
+        android:textSize="28dp"
+        android:onClick="onClick"
+        ></Button>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnHombreNo"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/Sexo"
+        android:layout_marginTop="220dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Hombre"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:background="@drawable/slected"
+        android:textSize="28dp"
+        android:onClick="onclick"
+        ></Button>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnMujerNo"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/Sexo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="120dp"
+        android:text="Mujer"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:background="@drawable/slected"
+        android:textSize="28dp"
+        android:onClick="onclick"
+        ></Button>
+    <Button
+
+        android:id="@+id/btnFlechaSexo"
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="546dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"
+        android:alpha="0"
+        />
+
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="546dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/White"
+        android:src="@drawable/icon_awesome_arrow_right"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

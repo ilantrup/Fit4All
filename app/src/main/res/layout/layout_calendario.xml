@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendario"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="40dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="18dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visualiza tu progreso"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="18dp"
+        />
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="432dp"
+        android:layout_marginTop="200dp"
+        app:abbreviationsBarColor="@color/White"
+        app:abbreviationsLabelsColor="@android:color/black"
+        app:anotherMonthsDaysLabelsColor="@color/Grey"
+        app:daysLabelsColor="@android:color/black"
+        app:eventsEnabled="true"
+        app:headerColor="@color/White"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pagesColor="@color/White"
+        app:selectionColor="@color/Grey"
+        app:selectionLabelColor="@color/White"
+        app:todayLabelColor="@color/Orange"
+        app:type="one_day_picker"
+        app:headerLabelColor="@color/Black"
+        app:forwardButtonSrc="@drawable/ic_chevron_right_black_24dp"
+        app:previousButtonSrc="@drawable/ic_chevron_left_black_24dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

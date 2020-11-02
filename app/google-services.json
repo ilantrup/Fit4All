@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "746356123216",
+    "firebase_url": "https://proyecto-final-637d2.firebaseio.com",
+    "project_id": "proyecto-final-637d2",
+    "storage_bucket": "proyecto-final-637d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746356123216:android:4398db5b176d3537c11355",
+        "android_client_info": {
+          "package_name": "com.example.fit4all"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746356123216-hsi39e46j9elatfgoctgrecam5c0tsul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7_I5ObhSsPioB-Vv9MNecxQWn5OxVRi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746356123216-hsi39e46j9elatfgoctgrecam5c0tsul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746356123216:android:69880cd409ce0e5ec11355",
+        "android_client_info": {
+          "package_name": "com.example.fitpostaall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746356123216-gt56fpb8tbvcnfqvnlt0ljrlikd1pupt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitpostaall",
+            "certificate_hash": "827effa0b488688d2fda7640428c2c56e416a81e"
+          }
+        },
+        {
+          "client_id": "746356123216-gdm3rgm11qltkg86nv5jfolau54f7kn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitpostaall",
+            "certificate_hash": "2ae0be48a3587a26c1ab62658a394b4f5486c64c"
+          }
+        },
+        {
+          "client_id": "746356123216-orcqi1d68l4ntosir06gvtrjg7g9qs71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitpostaall",
+            "certificate_hash": "429766ee7ec03b2e8df056eb4e93b9f85d8c3dd4"
+          }
+        },
+        {
+          "client_id": "746356123216-c47h54tvvo9h14ptq0vbm21futblrnr5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fitpostaall",
+            "certificate_hash": "a4421bb42dbd2a5d019488e29b308650f5720b13"
+          }
+        },
+        {
+          "client_id": "746356123216-hsi39e46j9elatfgoctgrecam5c0tsul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7_I5ObhSsPioB-Vv9MNecxQWn5OxVRi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746356123216-hsi39e46j9elatfgoctgrecam5c0tsul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone_x_xs_11_pro__54"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/nombrePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Federico Kozak"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/nombrePerfil"
+        app:layout_constraintBottom_toBottomOf="@id/nombrePerfil"
+        app:layout_constraintRight_toRightOf="@id/txtLogroEnPerfil"
+        android:text="Cerrar sesión"
+        android:textSize="10dp"
+        android:background="@color/Red"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewFotoPerfil"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/nopath___copia__55_"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/nombrePerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/txtPerfilEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        app:layout_constraintTop_toBottomOf="@id/imageViewFotoPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="23dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/Orange"
+        android:fontFamily="@font/sf_pro"
+
+
+        />
+    <Button
+        android:id="@+id/txtEditarEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/txtPerfilEnPerfil"
+        app:layout_constraintTop_toTopOf="@id/txtPerfilEnPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/txtPerfilEnPerfil"
+        android:layout_marginRight="70dp"
+        android:onClick="onClick"
+        android:alpha="0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        app:layout_constraintEnd_toStartOf="@id/txtPerfilEnPerfil"
+        app:layout_constraintTop_toTopOf="@id/txtPerfilEnPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/txtPerfilEnPerfil"
+        android:textSize="23dp"
+        android:textColor="@color/Blue"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginRight="70dp"
+        />
+    <Button
+        android:id="@+id/txtLogroEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/txtPerfilEnPerfil"
+        app:layout_constraintTop_toTopOf="@+id/txtPerfilEnPerfil"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="18dp"
+        android:alpha="0"
+        android:onClick="onClick"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logros"
+        app:layout_constraintLeft_toRightOf="@id/txtPerfilEnPerfil"
+        app:layout_constraintTop_toTopOf="@+id/txtPerfilEnPerfil"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="18dp"
+        android:textSize="23dp"
+        android:textColor="@color/Blue"
+        android:fontFamily="@font/sf_pro"
+        android:onClick="onClick"
+        />
+    <TextView
+        android:id="@+id/txtCitaEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='"Sin sufrimiento no hay felicidad"'
+        app:layout_constraintTop_toBottomOf="@id/txtPerfilEnPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/Grey"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="30dp"
+
+
+        />
+    <ImageView
+        android:id="@+id/imageViewLesionOffEnPerfil"
+        app:layout_constraintLeft_toRightOf="@id/txtLesionEnPerfil"
+        app:layout_constraintTop_toTopOf="@id/txtLesionEnPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/txtLesionEnPerfil"
+        android:layout_marginLeft="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/switch_off"
+        android:layout_marginTop="8dp"
+
+        />
+    <TextView
+        android:id="@+id/txtLesionEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modo Lesión"
+        app:layout_constraintTop_toBottomOf="@id/txtCitaEnPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="359dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="20dp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtdatosPersonalesEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos Personales"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtLesionEnPerfil"
+        app:layout_constraintLeft_toLeftOf="@id/txtLesionEnPerfil"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/Grey"
+        android:fontFamily="@font/sf_pro"
+
+        />
+    <TextView
+        android:id="@+id/txtSexoEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo: Hombre"
+        app:layout_constraintTop_toBottomOf="@+id/txtdatosPersonalesEnPerfil"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/txtdatosPersonalesEnPerfil"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="16dp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtEdadEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad: 17"
+        app:layout_constraintTop_toBottomOf="@+id/txtSexoEnPerfil"
+        app:layout_constraintLeft_toLeftOf="@id/txtSexoEnPerfil"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="7dp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtPesoEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso: 57kg"
+        app:layout_constraintTop_toBottomOf="@id/txtEdadEnPerfil"
+        app:layout_constraintLeft_toLeftOf="@id/txtEdadEnPerfil"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="9dp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtAlturaEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura: 185cm"
+        app:layout_constraintTop_toBottomOf="@id/txtPesoEnPerfil"
+        app:layout_constraintLeft_toLeftOf="@id/txtPesoEnPerfil"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="9dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txtDedicacionEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:text="Dedicación: 3 veces por semana"
+        android:textColor="@color/Black"
+        android:textSize="21dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="@id/txtAlturaEnPerfil"
+        app:layout_constraintTop_toBottomOf="@id/txtAlturaEnPerfil"
+
+
+        />
+
+    <TextView
+        android:id="@+id/txtObjetivoEnPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Objetivo: Ganar fuerza"
+        app:layout_constraintTop_toBottomOf="@id/txtDedicacionEnPerfil"
+        app:layout_constraintLeft_toLeftOf="@id/txtDedicacionEnPerfil"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="9dp"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

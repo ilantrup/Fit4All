@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone_x_xs_11_pro__49"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="350dp"
+        android:layout_height="97dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/sf_pro"
+        android:gravity="left"
+        android:text="Prueba nuestros menús completamente variados para tener una dieta equilibrada. Tenemos montones de opciones para todas las comidas! "
+        android:textColor="@color/Black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageViewFlechaIzqComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_awesome_arrow_left_onboarding"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/btnListoOn"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="600dp"
+        android:text="Listo!"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sf_pro"
+        android:background="@drawable/login"
+        android:textSize="28dp"
+        android:onClick="onclick"
+        ></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

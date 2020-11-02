@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iphone_x_xs_11_pro__55"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <TextView
+        android:id="@+id/nombreEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="20dp"
+
+        />
+    <ImageView
+        android:id="@+id/imageViewFotoEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nopath___copia__55_"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/nombreEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/txtcambiarFotoPerfilEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar foto de perfil"
+        app:layout_constraintTop_toBottomOf="@id/imageViewFotoEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="14dp"
+        android:textColor="@color/Lblue"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/txtPerfilEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        app:layout_constraintTop_toBottomOf="@id/txtcambiarFotoPerfilEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="23dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/Blue"
+        android:fontFamily="@font/sf_pro"
+
+
+
+        />
+    <TextView
+        android:id="@+id/txtEditarEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        app:layout_constraintEnd_toStartOf="@id/txtPerfilEnEditPerfil"
+        app:layout_constraintTop_toTopOf="@id/txtPerfilEnEditPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/txtPerfilEnEditPerfil"
+        android:textSize="23dp"
+        android:textColor="@color/Orange"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginRight="70dp"
+
+
+
+        />
+    <TextView
+        android:id="@+id/txtLogroEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logros"
+        app:layout_constraintLeft_toRightOf="@id/txtPerfilEnEditPerfil"
+        app:layout_constraintTop_toTopOf="@+id/txtPerfilEnEditPerfil"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="18dp"
+        android:textSize="23dp"
+        android:textColor="@color/Blue"
+        android:fontFamily="@font/sf_pro"
+
+
+
+        />
+    <TextView
+        android:id="@+id/txtCitaEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='"Sin sufrimiento no hay felicidad"'
+        app:layout_constraintTop_toBottomOf="@id/txtPerfilEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20dp"
+        android:textColor="@color/Grey"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="30dp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtcambiarCitaEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar cita"
+        app:layout_constraintTop_toBottomOf="@id/txtCitaEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="14dp"
+        android:textColor="@color/Lblue"
+        android:fontFamily="@font/sf_pro"
+
+        />
+    <TextView
+        android:id="@+id/txtSexoEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo"
+        app:layout_constraintTop_toBottomOf="@+id/txtcambiarCitaEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="10dp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtFechaEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        app:layout_constraintTop_toBottomOf="@+id/txtSexoEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="7dp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtPesoEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        app:layout_constraintTop_toBottomOf="@id/txtFechaEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="7dp"
+
+
+        />
+    <TextView
+        android:id="@+id/txtAlturaEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura"
+        app:layout_constraintTop_toBottomOf="@id/txtPesoEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:layout_marginLeft="22dp"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        android:layout_marginTop="7dp"
+
+
+        />
+
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/edxPeso"
+        app:layout_constraintTop_toTopOf="@id/edxPeso"
+        app:layout_constraintBottom_toBottomOf="@id/edxPeso"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:text="KG"
+        android:textColor="@color/Grey"
+        android:textSize="20dp"
+
+
+
+        />
+    <TextView
+        app:layout_constraintLeft_toRightOf="@id/edxAltura"
+        app:layout_constraintTop_toTopOf="@id/edxAltura"
+        app:layout_constraintBottom_toBottomOf="@id/edxAltura"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CM"
+        android:textSize="20dp"
+        android:textColor="@color/Grey"
+        android:fontFamily="@font/sf_pro"
+
+
+
+        />
+    <TextView
+        android:id="@+id/edxSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/txtSexoEnEditPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/txtSexoEnEditPerfil"
+        app:layout_constraintLeft_toRightOf="@id/txtSexoEnEditPerfil"
+        android:layout_marginLeft="130dp"
+        android:textSize="20dp"
+        android:text="Hombre"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+
+        />
+    <TextView
+        android:id="@+id/edxFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/txtFechaEnEditPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/txtFechaEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="@+id/edxSexo"
+        android:layout_marginTop="7dp"
+        android:textSize="20dp"
+        android:text="14/11/2002"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edxPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/txtPesoEnEditPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/txtPesoEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="@id/edxFecha"
+        android:textSize="20dp"
+        android:text="56"
+        android:textColor="@color/Black"
+        android:fontFamily="@font/sf_pro"
+        />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edxAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/txtAlturaEnEditPerfil"
+        app:layout_constraintBottom_toBottomOf="@id/txtAlturaEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="@id/edxPeso"
+        android:fontFamily="@font/sf_pro"
+        android:text="185"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+       />
+
+    <TextView
+        android:id="@+id/txtMailnEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Mail"
+        android:textColor="@color/Black"
+        android:textSize="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAlturaEnEditPerfil"
+        />
+    <TextView
+        android:id="@+id/txtDedicacionnEnEditPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="Dedicación"
+        android:textColor="@color/Black"
+        android:textSize="19dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAlturaEnEditPerfil"
+        />
+
+
+    <EditText
+        android:id="@+id/edxMailnEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="@color/Black"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="@id/txtMailnEnEditPerfil"
+        app:layout_constraintTop_toTopOf="@id/txtMailnEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="@id/edxAltura"
+        />
+    <TextView
+        android:id="@+id/txtDedicacionEnEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:text="3 veces por semana"
+        android:textColor="@color/Black"
+        android:textSize="21dp"
+        app:layout_constraintBottom_toBottomOf="@id/txtMailnEnEditPerfil"
+        app:layout_constraintTop_toTopOf="@id/txtMailnEnEditPerfil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="150dp"
+        />
+
+    <Button
+        android:id="@+id/imgbArrowLeftDedicacion"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/txtDedicacionEnEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtDedicacionEnEditText"
+        android:layout_marginLeft="10dp"
+        android:alpha="0"
+        />
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/txtDedicacionEnEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtDedicacionEnEditText"
+        android:src="@drawable/icon_awesome_arrow_left"
+        android:layout_marginLeft="10dp"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgbArrowRightDedicacion"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtDedicacionEnEditText"
+        app:layout_constraintBottom_toBottomOf="@id/txtDedicacionEnEditText"
+        android:alpha="0"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtDedicacionEnEditText"
+        app:layout_constraintBottom_toBottomOf="@id/txtDedicacionEnEditText"
+        android:src="@drawable/icon_awesome_arrow_right" />
+    <Button
+        android:id="@+id/btnConfCambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClick"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

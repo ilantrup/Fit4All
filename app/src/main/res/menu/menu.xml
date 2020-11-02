@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/perfil"
+        android:title="Perfil"
+        android:icon="@drawable/icon_awesome_user_alt"
+
+        />
+
+    <item
+    android:id="@+id/home"
+    android:title="Usuario"
+    android:icon="@drawable/home_icon"
+
+    />
+
+    <item
+
+        android:id="@+id/calendar"
+        android:title="Calendario"
+        android:icon="@drawable/icon_awesome_calendar_alt"
+        />
+
+</menu>
