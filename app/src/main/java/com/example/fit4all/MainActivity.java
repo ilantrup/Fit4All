@@ -563,6 +563,16 @@ public class MainActivity extends Activity {
         transacFrag.addToBackStack(null).commit();
     }
 
+    void  pasarFragEjcam()
+    {
+        Fragment fragEjCam;
+        fragEjCam = new fragEjCamera();
+        transacFrag = manager.beginTransaction();
+        transacFrag.replace(R.id.frameHolderDelNavBar, fragEjCam);
+        transacFrag.addToBackStack(null).commit();
+    }
+
+
 
     void recebirDatosUnplato(plato unplato) {
         plat = unplato;
