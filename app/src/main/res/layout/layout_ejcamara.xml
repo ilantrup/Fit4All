@@ -4,6 +4,36 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/Grey">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cronometroEjCam"
+        android:fontFamily="@font/sf_pro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/abajoEj"
+        android:textColor="@color/Blue"
+        android:textSize="40dp"
+        />
+    <ImageView
+        android:id="@+id/imagenEjCam"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="645dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="250dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/txtImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/texture"
+        app:layout_constraintEnd_toEndOf="@id/texture"
+        app:layout_constraintStart_toStartOf="@id/texture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp"
+        />
     <ImageView
         android:id="@+id/abajoEj"
         android:layout_width="match_parent"
@@ -26,17 +56,7 @@
         android:layout_marginLeft="30dp"
         android:id="@+id/txtNombreEj"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cronometroEjCam"
-        android:fontFamily="@font/sf_pro"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/abajoEj"
-        android:textColor="@color/Blue"
-        android:textSize="40dp"
-        />
+
     <TextView
         android:id="@+id/EjerCam"
         android:layout_width="wrap_content"
@@ -49,15 +69,7 @@
         android:textColor="@color/Blue"
         android:textSize="24dp"
         />
-    <ImageView
-        android:id="@+id/imagenEjCam"
-        android:layout_width="135dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="645dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="250dp"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+
 
 
 
@@ -95,16 +107,7 @@
         android:background="#00ff00"
         />
 
-    <ImageView
-        android:id="@+id/txtImg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/texture"
-        app:layout_constraintEnd_toEndOf="@id/texture"
-        app:layout_constraintStart_toStartOf="@id/texture"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="30dp"
-        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

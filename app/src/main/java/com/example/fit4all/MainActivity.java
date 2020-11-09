@@ -568,7 +568,7 @@ public class MainActivity extends Activity {
         Fragment fragEjCam;
         fragEjCam = new fragEjCamera();
         transacFrag = manager.beginTransaction();
-        transacFrag.replace(R.id.frameHolderDelNavBar, fragEjCam);
+        transacFrag.replace(R.id.frameHolder, fragEjCam);
         transacFrag.addToBackStack(null).commit();
     }
 
