@@ -6,6 +6,7 @@ import android.app.Fragment;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.ImageFormat;
@@ -46,6 +47,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
@@ -80,7 +82,7 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
     private FritzVisionPosePredictor posePredictor;
     private FritzVisionPoseResult poseResult;
 
-    private Activity act = getActivity();
+    private Activity act;
     Context con;
     ImageView imageView;
     int acumM, acumB;
@@ -188,6 +190,9 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
         view.setVisibility(View.GONE);
         takePictureButton.setVisibility(View.GONE);
 
+
+
+        act = getActivity();
         return vista;
     }
 
@@ -311,18 +316,16 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
                     try {
                         image = reader.acquireLatestImage();
 
+                        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.personaparada);
+
                         String cameraId = manager.getCameraIdList()[1];
                         ImageOrientation imageRotationFromCamera = FritzVisionOrientation.getImageOrientationFromCamera(act, cameraId);
-                        FritzVisionImage visionImage = FritzVisionImage.fromMediaImage(image,imageRotationFromCamera);
+                        FritzVisionImage visionImage = FritzVisionImage.fromBitmap(largeIcon); //fromMediaImage(image,imageRotationFromCamera);
                         poseResult = posePredictor.predict(visionImage);
                         arrayPose = poseResult.getPoses();
                         Log.d("resultadoArray", String.valueOf(poseResult));
                         posesOnImage = visionImage.overlaySkeletons(arrayPose);
                         bitmap = Bitmap.createBitmap(100, 100, Bitmap.Config.ARGB_8888);
-                        Canvas can = new Canvas(bitmap);
-                        for (Pose pose : arrayPose) {
-                            pose.draw(can);
-                        }
                         if(arrayPose.size()>0) {
                             if (start == true) {
                                 Pose pose = arrayPose.get(0);
@@ -349,9 +352,7 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
                             }
                         }
 
-                        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-                        paint.setColor(Color.RED);
-                        can.drawCircle(bitmap.getWidth()/2, bitmap.getHeight()/2, 100, paint);
+
 
 
 
