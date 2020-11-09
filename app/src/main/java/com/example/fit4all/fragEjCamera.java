@@ -320,7 +320,7 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
 
                         String cameraId = manager.getCameraIdList()[1];
                         ImageOrientation imageRotationFromCamera = FritzVisionOrientation.getImageOrientationFromCamera(act, cameraId);
-                        FritzVisionImage visionImage = FritzVisionImage.fromBitmap(largeIcon); //fromMediaImage(image,imageRotationFromCamera);
+                        FritzVisionImage visionImage = FritzVisionImage.fromMediaImage(image,imageRotationFromCamera);
                         poseResult = posePredictor.predict(visionImage);
                         arrayPose = poseResult.getPoses();
                         Log.d("resultadoArray", String.valueOf(poseResult));
