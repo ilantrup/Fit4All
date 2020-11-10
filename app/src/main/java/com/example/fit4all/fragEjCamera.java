@@ -143,15 +143,15 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
         vista=inflater.inflate(R.layout.layout_ejcamara,container,false);
         main= (MainActivity) getActivity();
         txtTiempo=vista.findViewById(R.id.cronometroEjCam);
-        txtNombre=vista.findViewById(R.id.txtNombreEj);
+        txtNombre=vista.findViewById(R.id.txtNombreEjCam);
         imgE=vista.findViewById(R.id.imagenEjCam);
         acumB=0;
         acumM=0;
+        lisEj=main.devolverArrayEj();//LISTASIGUIENTEEJERCICIOOOOOOOOO
         cargarDatos();
         mostrarTiempo();
         comenzar();
         start=true;
-        lisEj=main.devolverArrayEj();//LISTASIGUIENTEEJERCICIOOOOOOOOO
         con = getActivity().getApplication();
         Fritz.configure(getContext(), "4f1d35d761a24d328e07e0014c1cd515");
         imageView = vista.findViewById(R.id.txtImg);
@@ -334,23 +334,25 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
                             if (start == true) {
                                 Pose pose = arrayPose.get(0);
                                 Keypoint[] keypoints = pose.getKeypoints();
-                                Float val = keypoints[13].getPosition().y - keypoints[11].getPosition().y;
-                                Log.d("VALOR", String.valueOf(val));
-                                if (val <= 60) {
-                                    Float valor = keypoints[15].getPosition().x - keypoints[16].getPosition().x;
-                                    if (valor < 40.00 && valor > 0) {
-                                        Log.d("RTA", "abrir");
-                                        //Toast.makeText(MainActivity.this, "Tenes q abrir las piernas:", Toast.LENGTH_SHORT).show();
-                                        //Log.d("Pose2", "Tenes q abrir las piernassssssssssssssssssssssssssssssssssssssssssssssssssssss")
-                                        acumM++;
-                                    } else if (keypoints[15].getPosition().x > keypoints[5].getPosition().x && keypoints[16].getPosition().x > keypoints[6].getPosition().x) {
-                                        //Log.d("Pose", "Tenes q cerrar las piernas");
-                                        Log.d("RTA", "cerrar");
-                                        acumM++;
-                                        //Toast.makeText(MainActivity.this, "enes q cerrar las piernas", Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Log.d("RTA", "bien!");
-                                        acumB++;
+                                if (lisEj.get(main.iListaEj).getIdEjercicio()== "25") {
+                                    Float val = keypoints[13].getPosition().y - keypoints[11].getPosition().y;
+                                    Log.d("VALOR", String.valueOf(val));
+                                    if (val <= 60) {
+                                        Float valor = keypoints[15].getPosition().x - keypoints[16].getPosition().x;
+                                        if (valor < 40.00 && valor > 0) {
+                                            Log.d("RTA", "abrir");
+                                            //Toast.makeText(MainActivity.this, "Tenes q abrir las piernas:", Toast.LENGTH_SHORT).show();
+                                            //Log.d("Pose2", "Tenes q abrir las piernassssssssssssssssssssssssssssssssssssssssssssssssssssss")
+                                            acumM++;
+                                        } else if (keypoints[15].getPosition().x > keypoints[5].getPosition().x && keypoints[16].getPosition().x > keypoints[6].getPosition().x) {
+                                            //Log.d("Pose", "Tenes q cerrar las piernas");
+                                            Log.d("RTA", "cerrar");
+                                            acumM++;
+                                            //Toast.makeText(MainActivity.this, "enes q cerrar las piernas", Toast.LENGTH_SHORT).show();
+                                        } else {
+                                            Log.d("RTA", "bien!");
+                                            acumB++;
+                                        }
                                     }
                                 }
                             }
@@ -411,7 +413,7 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
                 @Override
                 public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request, TotalCaptureResult result) {
                     super.onCaptureCompleted(session, request, result);
-                    Toast.makeText(con, "Saved:" + file, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(con, "Saved:" + file, Toast.LENGTH_SHORT).show();
                     createCameraPreview();
                 }
             };
@@ -600,10 +602,10 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
             public void onTick(long millisUntilFinished) {
                 Log.d("RAF", String.valueOf(leftTime));
                 leftTime =millisUntilFinished;
+                mostrarTiempo();
                 //progress = (int) (Start-leftTime);
                 //progressBarStatus =progress;
                 //pb.setProgress(progressBarStatus);
-                Log.d("RAF", String.valueOf(leftTime));
             }
 
             @Override
@@ -632,7 +634,7 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
         Double time;
         // imgE.setImageDrawable(lisEj.get(main.iListaEj).get_Foto());
         txtNombre.setText(lisEj.get(main.iListaEj).get_NombreEjercicio());
-        time=lisEj.get(main.iListaEj).get_Seg()* 1000;
+        time=(lisEj.get(main.iListaEj).get_Seg() + 20)* 1000;
         Start=time.longValue();
         leftTime=Start ;
         //comenzar();

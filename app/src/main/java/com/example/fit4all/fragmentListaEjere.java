@@ -142,6 +142,7 @@ public class fragmentListaEjere extends Fragment implements View.OnClickListener
                     ejer.set_img(getResources().getDrawable(R.drawable.flexiones_img));
                     ejer.set_Foto(arrayCompleto.get(i).get_Foto());
                     ejer.set_seg(arrayCompleto.get(i).get_Seg());
+                    ejer.set_rec(arrayCompleto.get(i).get_rec());
                 }
                 else {
                     ejer.set_NombreEjercicio("Elongación de " + arrayCompleto.get(i).get_Musculos().get(0));
