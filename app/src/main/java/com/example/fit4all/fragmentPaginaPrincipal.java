@@ -145,7 +145,7 @@ public class fragmentPaginaPrincipal extends Fragment implements View.OnClickLis
             main.pasarATrenSuperior();
         }
         if(botonApretado.getId() == rut.getId()){
-            main.pasarFragEjcam();
+            main.pasarARutina();
         }
 
     }

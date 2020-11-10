@@ -60,6 +60,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 
 import ai.fritz.core.Fritz;
@@ -77,11 +78,12 @@ import ai.fritz.vision.poseestimation.PoseOnDeviceModel;
 
 
 public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
+    MainActivity main;
     TextView txtTiempo,txtNombre;
     ImageView imgE;
+    ArrayList<Ejercicio> lisEj;
     private FritzVisionPosePredictor posePredictor;
     private FritzVisionPoseResult poseResult;
-
     private Activity act;
     Context con;
     ImageView imageView;
@@ -139,15 +141,17 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View vista;
         vista=inflater.inflate(R.layout.layout_ejcamara,container,false);
+        main= (MainActivity) getActivity();
         txtTiempo=vista.findViewById(R.id.cronometroEjCam);
         txtNombre=vista.findViewById(R.id.txtNombreEj);
         imgE=vista.findViewById(R.id.imagenEjCam);
         acumB=0;
         acumM=0;
-        Start= 15000;
-        leftTime=Start;
+        cargarDatos();
+        mostrarTiempo();
         comenzar();
         start=true;
+        lisEj=main.devolverArrayEj();//LISTASIGUIENTEEJERCICIOOOOOOOOO
         con = getActivity().getApplication();
         Fritz.configure(getContext(), "4f1d35d761a24d328e07e0014c1cd515");
         imageView = vista.findViewById(R.id.txtImg);
@@ -260,7 +264,7 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
         @Override
         public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request, TotalCaptureResult result) {
             super.onCaptureCompleted(session, request, result);
-            Toast.makeText(con, "Saved:" + file, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(con, "Saved:" + file, Toast.LENGTH_SHORT).show();
             createCameraPreview();
         }
     };
@@ -609,17 +613,43 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
                 countDown.cancel();
                 start=false;
                 calcular();
+                if( main.iListaEj<lisEj.size())
+                {
+                    main.recebirSigEj(lisEj.get(main.iListaEj));
+                    main.pasarADescanso();
+                }else {
+
+                    main.pasarArta();
+                }
 
             }
         }.start();
 
+    }
+    public void cargarDatos()
+    {
+        //lisEj.get(main.iListaEj).get_Foto()
+        Double time;
+        // imgE.setImageDrawable(lisEj.get(main.iListaEj).get_Foto());
+        txtNombre.setText(lisEj.get(main.iListaEj).get_NombreEjercicio());
+        time=lisEj.get(main.iListaEj).get_Seg()* 1000;
+        Start=time.longValue();
+        leftTime=Start ;
+        //comenzar();
+        main.iListaEj++;
+    }
+    public void mostrarTiempo()
+    {
+        int minutes = (int) (leftTime/1000)/60;
+        int seconds = (int) (leftTime/1000)%60;
+        String der= String.format(Locale.getDefault(),"%02d:%02d",minutes,seconds);
+        txtTiempo.setText(der);
     }
     public void calcular()
     {
         float total = acumB + acumM;
         float prom = acumB/total;
         float resultado = 1000 * prom;
-
         Log.d("RTA", String.valueOf(total));
         Log.d("RTA", String.valueOf(prom));
         Log.d("RTA", String.valueOf(resultado));

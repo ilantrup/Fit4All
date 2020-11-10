@@ -14,6 +14,7 @@ public class Ejercicio {
     private String _NombreEjercicio;
     private Drawable _imagen;
     private Double _segundos;
+    private Boolean _reconocimiento;
 
     public void setIdEjercicio(String _idEjercicio) {
         this._idEjercicio = _idEjercicio;
@@ -47,6 +48,11 @@ public class Ejercicio {
         this._segundos=seg;
     }
 
+    public void set_rec(boolean rec)
+    {
+        this._reconocimiento=rec;
+    }
+
     public String getIdEjercicio() {
         return _idEjercicio;
     }
@@ -77,6 +83,8 @@ public class Ejercicio {
 
     public String get_Foto() { return _Foto; }
 
+    public Boolean get_rec(){return _reconocimiento;}
+
     public Ejercicio(){
         this._idEjercicio = "";
         this._Destreza = "";
@@ -85,6 +93,7 @@ public class Ejercicio {
         this._Musculos = new ArrayList<>();
         this._NombreEjercicio = "";
         this._segundos=0.0;
+        this._reconocimiento=false;
     }
 
 

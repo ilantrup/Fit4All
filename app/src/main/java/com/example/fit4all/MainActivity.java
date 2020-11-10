@@ -1047,7 +1047,7 @@ public class MainActivity extends Activity {
                             ej.set_Dificultad(document.getDouble("Dificultad"));
                             ej.set_Foto(document.getString("Foto"));
                             ej.set_seg(document.getDouble("Segundos"));
-
+                            ej.set_rec(document.getBoolean("Reconocimiento"));
                             List<String> mus = (List<String>) document.get("Musculos");
                             ej.set_Musculos(mus);
                             ej.setIdEjercicio(document.getId());

@@ -150,7 +150,7 @@ public class fragmentSerieEjercicios extends Fragment implements View.OnClickLis
             @Override
             public void onTick(long millisUntilFinished) {
 
-                progress += 100;
+                progress += 20;
                 pb.setProgress(progress);
                 mostrarTiempo();
                 leftTime =millisUntilFinished;
@@ -190,7 +190,7 @@ public class fragmentSerieEjercicios extends Fragment implements View.OnClickLis
                     main.pasarADescanso();
 
                 }else {
-                    countDown.cancel();
+
                     main.pasarArta();
                 }
 
@@ -201,7 +201,6 @@ public class fragmentSerieEjercicios extends Fragment implements View.OnClickLis
     }
     public void cargarDatos()
     {
-
         //lisEj.get(main.iListaEj).get_Foto()
         Double time;
         txtI.setText((main.iListaEj+1)+"/"+lisEj.size());
@@ -214,7 +213,6 @@ public class fragmentSerieEjercicios extends Fragment implements View.OnClickLis
         pb.setMax(((int) Start ));
         //comenzar();
         main.iListaEj++;
-
     }
     public void mostrarTiempo()
     {

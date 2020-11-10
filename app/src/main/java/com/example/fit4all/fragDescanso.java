@@ -54,7 +54,13 @@ public class fragDescanso extends Fragment implements View.OnClickListener {
             @Override
             public void onFinish() {
                 countDown.cancel();
+                if(!sigEj.get_rec())
+                {
                     main.pasarASerieEjer();
+                }else {
+                    main.pasarFragEjcam();
+                }
+
             }
         }.start();
     }
