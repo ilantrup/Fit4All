@@ -51,6 +51,8 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
+import com.squareup.picasso.Picasso;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -638,7 +640,9 @@ public class fragEjCamera  extends Fragment  implements SurfaceHolder.Callback{
         Start=time.longValue();
         leftTime=Start ;
         //comenzar();
+        Picasso.with(con).load(lisEj.get(main.iListaEj).get_Foto()).into(imgE);
         main.iListaEj++;
+
     }
     public void mostrarTiempo()
     {
